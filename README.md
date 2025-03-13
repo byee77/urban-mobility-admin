@@ -2,26 +2,6 @@
 
 LogiTrack is a modern, full-featured logistics management platform designed for warehouses and logistics centers. It provides comprehensive tools for tracking parcels, managing vehicles, and handling orders efficiently.
 
-## Local Development
-
-To run the development server:
-
-```bash
-# Start the development server
-npm run dev
-# or
-yarn dev
-
-# The server will start at http://localhost:3000
-```
-
-You can access different sections of the application at:
-- Admin Dashboard: http://localhost:3000/admin
-- Client Portal: http://localhost:3000/client
-- Tracking Page: http://localhost:3000/tracking
-- Login: http://localhost:3000/login
-- Signup: http://localhost:3000/signup
-
 ## Features
 
 ### 🚚 Vehicle Management
