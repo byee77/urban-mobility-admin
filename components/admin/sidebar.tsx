@@ -25,21 +25,6 @@ export function Sidebar() {
       icon: Truck,
     },
     {
-      title: "Map",
-      href: "/admin/map",
-      icon: Map,
-    },
-    {
-      title: "Payments",
-      href: "/admin/payments",
-      icon: CreditCard,
-    },
-    {
-      title: "Analytics",
-      href: "/admin/analytics",
-      icon: BarChart3,
-    },
-    {
       title: "Eco Tokens",
       href: "/admin/eco-tokens",
       icon: Leaf,
@@ -54,6 +39,11 @@ export function Sidebar() {
       href: "/admin/settings",
       icon: Settings,
     },
+    {
+      title: "Payments",
+      href: "/admin/payments",
+      icon: CreditCard,
+    },
   ]
 
   return (
@@ -66,8 +56,8 @@ export function Sidebar() {
               key={route.href}
               href={route.href}
               className={cn(
-                "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium hover:bg-muted",
-                pathname === route.href ? "bg-muted" : "transparent",
+                "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                pathname === route.href ? "bg-gray-300 text-black" : "text-gray-700 hover:bg-gray-200"
               )}
             >
               <route.icon className="h-4 w-4" />

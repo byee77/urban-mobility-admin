@@ -30,16 +30,6 @@ export function MainNav({ isLoggedIn = false, userRole = null }: MainNavProps) {
       icon: <Truck className="mr-2 h-4 w-4" />,
     },
     {
-      title: "Analytics",
-      href: "/admin/analytics",
-      icon: <BarChart3 className="mr-2 h-4 w-4" />,
-    },
-    {
-      title: "Payments",
-      href: "/admin/payments",
-      icon: <CreditCard className="mr-2 h-4 w-4" />,
-    },
-    {
       title: "Eco Tokens",
       href: "/admin/eco-tokens",
       icon: <Leaf className="mr-2 h-4 w-4" />,
@@ -48,6 +38,11 @@ export function MainNav({ isLoggedIn = false, userRole = null }: MainNavProps) {
       title: "Settings",
       href: "/admin/settings",
       icon: <Settings className="mr-2 h-4 w-4" />,
+    },
+    {
+      title: "Payments",
+      href: "/admin/payments",
+      icon: <CreditCard className="mr-2 h-4 w-4" />,
     },
   ]
 

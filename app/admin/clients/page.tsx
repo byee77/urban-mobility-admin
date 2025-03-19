@@ -128,8 +128,8 @@ export default function ClientsPage() {
             <DollarSign className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">$45,231.89</div>
-            <p className="text-xs text-muted-foreground">Avg. $353.37 per client</p>
+            <div className="text-2xl font-bold">₹45,231.89</div>
+            <p className="text-xs text-muted-foreground">Avg. ₹353.37 per client</p>
           </CardContent>
         </Card>
       </div>
@@ -184,7 +184,7 @@ export default function ClientsPage() {
                   </div>
                 </TableCell>
                 <TableCell>{client.totalOrders}</TableCell>
-                <TableCell>${client.totalSpent.toFixed(2)}</TableCell>
+                <TableCell>₹{client.totalSpent.toFixed(2)}</TableCell>
                 <TableCell>
                   <Badge variant={client.status === "active" ? "success" : "secondary"}>
                     {client.status === "active" ? "Active" : "Inactive"}

@@ -10,7 +10,7 @@ import { OrdersProvider } from "@/context/orders-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LogiTrack - Logistics Management Platform",
+  title: "Admin SmartTransport",
   description: "Modern logistics management platform for warehouses and logistics centers",
 }
 

@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image";
+import deliveryIcon from "./fast-delivery-icon.jpg";
 import { SiteHeader } from "@/components/site-header"
 import { Button } from "@/components/ui/button"
 import { Package, Truck, BarChart3, CreditCard, Leaf, MapPin, Clock, Shield, ChevronRight } from "lucide-react"
@@ -27,22 +29,34 @@ export default function Home() {
                     <Link href="/signup?role=client">Book a Parcel</Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="/signup?role=admin">Manage Logistics</Link>
+                    {/* <Link href="/signup?role=admin">Manage Logistics</Link> */}
+                    <Link href="admin">Manage Logistics</Link>
+                    
                   </Button>
                 </div>
               </div>
+
               <div className="mx-auto lg:mx-0 relative">
-                <div className="relative h-[350px] w-[350px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px]">
+                <div className="relative h-[500px] w-[500px] sm:h-[500px] sm:w-[500px] lg:h-[500px] lg:w-[500px]">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full opacity-20 blur-3xl"></div>
-                  <img
-                    src="/placeholder.svg?height=500&width=500"
+                  {/* <Image
+                    src={deliveryIcon}
                     alt="Logistics Dashboard"
-                    className="relative z-10 rounded-lg border shadow-xl"
-                    width={500}
-                    height={500}
-                  />
+                    className="relative z-10 rounded-lg border shadow-xl w-[900px] h-[500px] sm:w-[600px] sm:h-[400px]"
+                    width={1800}
+                    height={1900}
+                  /> */}
+                  <Image
+  src={deliveryIcon}
+  alt="Logistics Dashboard"
+  className="relative z-10 rounded-lg border shadow-xl w-[1700px] h-[500px] sm:w-[800px] sm:h-[400px]"
+  width={2000}
+  height={1900}
+/>
+
                 </div>
               </div>
+
             </div>
           </div>
         </section>

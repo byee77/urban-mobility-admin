@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
@@ -118,7 +119,7 @@ export default function PaymentsPage() {
             <DollarSign className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">$45,231.89</div>
+            <div className="text-2xl font-bold">₹45,231.89</div>
             <div className="flex items-center pt-1 text-xs text-green-500">
               <ArrowUpRight className="mr-1 h-3 w-3" />
               <span>+20.1% from last month</span>
@@ -131,7 +132,7 @@ export default function PaymentsPage() {
             <CreditCard className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">$530.75</div>
+            <div className="text-2xl font-bold">₹530.75</div>
             <div className="flex items-center pt-1 text-xs text-amber-500">
               <TrendingUp className="mr-1 h-3 w-3" />
               <span>2 payments awaiting clearance</span>
@@ -144,7 +145,7 @@ export default function PaymentsPage() {
             <Wallet className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">$305.49</div>
+            <div className="text-2xl font-bold">₹305.49</div>
             <div className="flex items-center pt-1 text-xs text-green-500">
               <ArrowUpRight className="mr-1 h-3 w-3" />
               <span>+15.3% from last month</span>
@@ -192,7 +193,7 @@ export default function PaymentsPage() {
                 <TableCell className="font-medium">{payment.id}</TableCell>
                 <TableCell>{payment.orderId}</TableCell>
                 <TableCell>{payment.client}</TableCell>
-                <TableCell>${payment.amount.toFixed(2)}</TableCell>
+                <TableCell>₹{payment.amount.toFixed(2)}</TableCell>
                 <TableCell>
                   <div className="flex items-center">
                     {payment.method === "credit-card" ? (
@@ -249,7 +250,7 @@ export default function PaymentsPage() {
                   <Wallet className="mr-2 h-4 w-4 text-muted-foreground" />
                   <div>
                     <div className="font-medium">
-                      {payment.id} - ${payment.amount.toFixed(2)}
+                      {payment.id} - ₹{payment.amount.toFixed(2)}
                     </div>
                     <div className="text-xs text-muted-foreground">Hash: {payment.transactionHash}</div>
                   </div>
